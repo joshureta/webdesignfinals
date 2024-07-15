@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #009970;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+
+.navbar ul li a:hover {
+    background-color: #00b383;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.main-content {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.artist-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.artist-item {
+    text-align: center;
+    width: 30%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.artist-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.artist-info {
+    padding: 15px;
+    background-color: #f3f3f3;
+}
+
+.artist-info p {
+    margin: 10px 0 0;
+    color: #555;
+    font-size: 14px;
+}
+
+.artist-info p:first-child {
+    margin-top: 0;
+}
+
+.brand-shoes {
+    text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .artist-item {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .artist-item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar ul li {
+        margin: 0 10px;
+    }
+
+    .navbar ul li a {
+        padding: 10px 15px;
+    }
+}

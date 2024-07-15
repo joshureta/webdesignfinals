@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+    background-color: #f3ff8b;
+}
+
+.logo {
+    position: relative;
+    width: 300px;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #009970;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color:whitesmoke;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+
+.navbar ul li a:hover {
+    background-color:  #00b383;
+}
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.main-content {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.img-row {
+    margin-bottom: 40px;
+}
+
+.img-row h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.shoes-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.shoe-item {
+    text-align: left;
+    width: 22%;
+    margin-bottom: 20px;
+}
+
+.shoe-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.shoe-info {
+    margin-top: 10px;
+}
+
+.shoe-info p {
+    margin: 5px 0;
+}
+
+.status {
+    color: orange;
+}
+
+.name {
+    font-weight: bold;
+}
+.button{
+    background-color: #009970;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+    
+}
+.button:hover {
+    background-color: #04AA6D; /* Green */
+    color: white;
+  }
+.shoes-image{
+    text-decoration: none;
+    color:white;
+}
+/* Add this CSS for responsiveness */
+
+@media only screen and (max-width: 1200px) {
+    .shoes-container {
+        justify-content: center;
+    }
+
+    .shoe-item {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .shoe-item {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .shoe-item {
+        width: 100%;
+    }
+}
+
+
